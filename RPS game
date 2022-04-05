@@ -1,0 +1,25 @@
+def rps(p1, p2):
+    s = 'scissors'
+    p = 'paper'
+    r = 'rock'
+    while p1 == s:
+        if p2 == p:
+            return 'Player 1 won!'
+        elif p2 == r:
+            return 'Player 2 won!'
+        else:
+            return 'Draw!'
+    while p1 == p:
+        if p2 == r:
+            return 'Player 1 won!'
+        elif p2 == s:
+            return 'Player 2 won!'
+        else:
+            return 'Draw!'
+    while p1 == r:
+        if p2 == s:
+            return 'Player 1 won!'
+        elif p2 == p:
+            return 'Player 2 won!'
+        else:
+            return 'Draw!'
